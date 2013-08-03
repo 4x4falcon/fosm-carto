@@ -1,0 +1,13 @@
+[
+    {
+        "if": {
+            "Datasource.type": "postgis"
+        },
+        "then": {
+            "Datasource.dbname": "gis",
+            "Datasource.user": "www-data",
+            "Datasource.host": "localhost"
+        }
+    }
+]
+

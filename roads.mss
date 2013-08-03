@@ -2468,3 +2468,58 @@
     }
   }
 }
+
+#4wd-only {
+  [4wd_only = 'yes'][zoom >= 13] {
+    text-name:"'4WD Only'";
+    text-face-name: @book-fonts;
+    text-placement:line;
+    text-fill: #000000;
+    text-halo-fill: #ffffff;
+    text-halo-radius: 1;
+    text-size: 6;
+    [zoom >= 15][zoom < 17] {
+      text-size: 8;
+    }
+    [zoom >= 17] {
+      text-size: 10;
+    }
+  }
+  [4wd_only = 'recommended'][zoom >= 13] {
+    text-name:"'4WD Recommended'";
+    text-face-name: @book-fonts;
+    text-placement:line;
+    text-fill: #000000;
+    text-halo-fill: #ffffff;
+    text-halo-radius: 1;
+    text-size: 6;
+    [zoom >= 15][zoom < 17] {
+      text-size: 8;
+    }
+    [zoom >= 17] {
+      text-size: 10;
+    }
+  }
+}
+
+
+
+#ford-fill {
+  [ford = 'yes'][zoom >= 13] {
+    line-color: #0000df;
+    line-cap: butt;
+    line-join: round;
+    line-opacity: 0.5;
+    line-width: 4;
+    line-dasharray: 4,3;
+    [zoom >= 15][zoom < 17] {
+      line-width: 5;
+      line-dasharray: 5,4;
+    }
+    [zoom >= 17] {
+      line-width: 6;
+      line-dasharray: 6,5;
+    }
+  }
+}
+

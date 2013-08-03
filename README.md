@@ -1,10 +1,10 @@
-# OpenStreetMap Carto
+# fosm Carto
 
-A project to re-implement the standard OpenStreetMap mapnik style, in CartoCSS
+A project to re-implement the standard fosm mapnik style, in CartoCSS
 
 # Setup
 
-You need OpenStreetMap data loaded into a PostGIS database (see below for [dependencies](https://github.com/gravitystorm/openstreetmap-carto#dependencies)). These stylesheets currently work only with the osm2pgsql defaults (i.e. database name is 'gis', table names are 'planet_osm_point' etc).
+You need fosm data loaded into a PostGIS database (see below for [dependencies](https://github.com/4x4falcon/fosm-carto#dependencies)). These stylesheets currently work only with the osm2pgsql defaults (i.e. database name is 'gis', table names are 'planet_osm_point' etc).
 
 It's probably easiest to grab an PBF of OSM data from [metro.teczno.com](http://metro.teczno.com/) or [geofabrik](http://download.geofabrik.de/). Once you've set up your PostGIS database, import with osm2pgsql:
 
@@ -53,6 +53,16 @@ If you aren't using TileMill, you can compile the CartoCSS stylesheets into Mapn
 
 * [carto](https://github.com/mapbox/carto) >= 0.9.3 (we're using instances with cascading rules)
 * [mapnik](https://github.com/mapnik/mapnik/wiki/Mapnik-Installation) >= 2.1.0
+
+* [CartoCC(https://github.com/yohanboniface/CartoCC) - Add variables from json file to the project.mml file
+
+```
+cartocc project-fosm-carto.mml project-fosm-carto.json project.mml
+
+or
+
+./do_cartocc.sh
+```
 
 ---
 
