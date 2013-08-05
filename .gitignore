@@ -1,3 +1,7 @@
 .thumb.png
 layers/
 data/
+project.mml
+project-fosm-carto_map.fosm.org.json
+do_cartocc_map.fosm.org.sh
+

@@ -37,6 +37,10 @@
     }
   }
 
+  [natural = 'land'][zoom >= 6] {
+      polygon-fill: @land-color;
+  }
+
   [natural = 'mud'][zoom >= 13]::natural {
     polygon-pattern-file: url('symbols/mud.png');
   }
