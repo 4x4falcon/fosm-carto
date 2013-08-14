@@ -304,7 +304,6 @@
   }
 }
 
-
 #tunnels::casing {
   [highway = 'motorway'],
   [highway = 'motorway_link'] {
@@ -629,12 +628,26 @@
         [surface = 'unpaved'] {
           line-color: darken(@residential-casing, 10%);
           line-dasharray: 8,8;
-          }
+        }
       }
       [zoom >= 14] { line-width: @residential-width-z14 + 1.5; }
       [zoom >= 15] { line-width: @residential-width-z15 + 1.8; }
       [zoom >= 16] { line-width: @residential-width-z16 + 1.8; }
       [zoom >= 17] { line-width: @residential-width-z17 + 2.5; }
+      [zoom >= 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.17.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.17.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.17.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.17.png);
+        }
+      }
     }
   }
 

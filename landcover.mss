@@ -265,6 +265,15 @@
     }
   }
 
+  [feature = 'amenity_prison'][zoom >= 10] {
+    polygon-fill: #ffff00;
+    polygon-opacity: 0.5;
+    [zoom >= 15] {
+      line-width: 0.5;
+      line-color: #000000;
+    }
+  }
+
   [feature = 'aeroway_apron'][zoom >= 12] {
     polygon-fill: #e9d1ff;
   }
@@ -334,6 +343,8 @@
     polygon-pattern-file: url('symbols/nature_reserve5.png');
     line-color: #6c3;
     line-width: 0.5;
+    polygon-fill: #b6fdb6;
+    polygon-opacity: 0.6;
     [zoom >= 14] {
       polygon-pattern-file: url('symbols/nature_reserve6.png');
       line-width: 1;
