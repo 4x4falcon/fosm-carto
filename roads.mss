@@ -553,6 +553,34 @@
     [zoom >= 13] { line-width: @motorway-width-z13 + 1.5; }
     [zoom >= 15] { line-width: @motorway-width-z15 + 1.8; }
     [zoom >= 17] { line-width: @motorway-width-z17 + 2.5; }
+      [zoom >= 15][zoom < 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.15.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.15.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.15.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.15.png);
+        }
+      }
+      [zoom >= 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.17.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.17.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.17.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.17.png);
+        }
+      }
   }
 
   [highway = 'trunk'][tunnel != 'yes'] {
@@ -567,8 +595,34 @@
     [zoom >= 13] { line-width: @trunk-width-z13 + 1.5; }
     [zoom >= 15] { line-width: @trunk-width-z15 + 1.8; }
     [zoom >= 17] { line-width: @trunk-width-z17 + 2.5; }
-
-
+      [zoom >= 15][zoom < 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.15.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.15.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.15.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.15.png);
+        }
+      }
+      [zoom >= 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.17.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.17.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.17.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.17.png);
+        }
+      }
   }
 
   [highway = 'primary'][tunnel != 'yes'] {
@@ -583,6 +637,34 @@
     [zoom >= 13] { line-width: @primary-width-z13 + 1.5; }
     [zoom >= 15] { line-width: @primary-width-z15 + 1.8; }
     [zoom >= 17] { line-width: @primary-width-z17 + 2.5; }
+      [zoom >= 15][zoom < 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.15.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.15.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.15.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.15.png);
+        }
+      }
+      [zoom >= 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.17.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.17.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.17.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.17.png);
+        }
+      }
   }
 
   [highway = 'secondary'][tunnel != 'yes'] {
@@ -598,6 +680,34 @@
     [zoom >= 13] { line-width: @secondary-width-z13 + 1.5; }
     [zoom >= 15] { line-width: @secondary-width-z15 + 1.8; }
     [zoom >= 17] { line-width: @secondary-width-z17 + 2.5; }
+      [zoom >= 15][zoom < 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.15.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.15.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.15.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.15.png);
+        }
+      }
+      [zoom >= 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.17.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.17.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.17.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.17.png);
+        }
+      }
   }
 
   [highway = 'tertiary'][tunnel != 'yes'] {
@@ -614,6 +724,34 @@
     [zoom >= 14] { line-width: @tertiary-width-z14 + 1.5; }
     [zoom >= 15] { line-width: @tertiary-width-z15 + 1.8; }
     [zoom >= 17] { line-width: @tertiary-width-z17 + 2.5; }
+      [zoom >= 15][zoom < 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.15.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.15.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.15.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.15.png);
+        }
+      }
+      [zoom >= 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.17.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.17.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.17.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.17.png);
+        }
+      }
   }
 
   [highway = 'residential'],
@@ -634,6 +772,20 @@
       [zoom >= 15] { line-width: @residential-width-z15 + 1.8; }
       [zoom >= 16] { line-width: @residential-width-z16 + 1.8; }
       [zoom >= 17] { line-width: @residential-width-z17 + 2.5; }
+      [zoom >= 15][zoom < 17] {
+        [incline = '2'] {
+          line-pattern-file: url(symbols/chevron2.15.png);
+        }
+        [incline = '1'] {
+          line-pattern-file: url(symbols/chevron1.15.png);
+        }
+        [incline = '-1'] {
+          line-pattern-file: url(symbols/chevron1.r.15.png);
+        }
+        [incline = '-2'] {
+          line-pattern-file: url(symbols/chevron2.r.15.png);
+        }
+      }
       [zoom >= 17] {
         [incline = '2'] {
           line-pattern-file: url(symbols/chevron2.17.png);
