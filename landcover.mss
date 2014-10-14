@@ -353,9 +353,33 @@
 }
 
 #area-text {
-  [way_area >= 150000][zoom >= 14],
-  [way_area >= 80000][zoom >= 15],
-  [way_area >= 20000][zoom >= 16],
+  [way_area >= 150000][zoom >= 14] {
+    text-name: "[name]";
+    text-size: 7;
+    text-fill: #000033;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 20;
+    text-placement: interior;
+  }
+  [way_area >= 80000][zoom >= 15] {
+    text-name: "[name]";
+    text-size: 9;
+    text-fill: #000033;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 20;
+    text-placement: interior;
+  }
+  [way_area >= 20000][zoom >= 16] {
+    text-name: "[name]";
+    text-size: 10;
+    text-fill: #000033;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 20;
+    text-placement: interior;
+  }
   [zoom >= 17] {
     text-name: "[name]";
     text-size: 10;
