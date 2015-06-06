@@ -52,8 +52,8 @@
       polygon-fill: #aacbaf;
     }
     [zoom >= 14] {
-      [religion = 'jewish'] { polygon-pattern-file: url('symbols/cemetery_jewish.18.png'); }
-      [religion = 'christian'] { polygon-pattern-file: url('symbols/grave_yard.png'); }
+      [religion = 'jewish'] { polygon-pattern-file: url('symbols/grave_yard_jewish.png'); }
+      [religion = 'christian'] { polygon-pattern-file: url('symbols/grave_yard_christian.png'); }
       [religion = 'INT-generic'] { polygon-pattern-file: url('symbols/grave_yard_generic.png'); }
     }
   }
@@ -180,6 +180,7 @@
     }
   }
 
+  [feature = 'power_plant'],
   [feature = 'power_station'],
   [feature = 'power_generator'] {
     [zoom >= 10] {
@@ -191,10 +192,13 @@
     }
   }
 
-  [feature = 'power_sub_station'][zoom >= 13] {
+  [feature = 'power_substation'],
+  [feature = 'power_sub_station'] {
+    [zoom >= 13] {
     polygon-fill: #bbb;
     line-width: 0.4;
     line-color: #555;
+   }
   }
 
   [feature = 'landuse_commercial'][zoom >= 10] {
