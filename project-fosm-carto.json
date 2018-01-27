@@ -5,8 +5,7 @@
         },
         "then": {
             "Datasource.dbname": "gistwo",
-            "Datasource.user": "www-data",
-            "Datasource.host": "localhost"
+            "Datasource.user": "www-data"
         }
     }
 ]

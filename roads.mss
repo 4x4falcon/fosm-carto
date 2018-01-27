@@ -2761,36 +2761,5 @@
 }
 
 
-#highway_crossings {
-  [zoom>=19][angle_diff<40] {
-	point-ignore-placement: true;
-	point-file: url('symbols/crossing.svg');
-	point-transform: 'rotate([angle]) scale(0.15)';
-	[zoom>=20] {
-	  [tactile_paving='yes'] {
-		t/point-ignore-placement: true;
-		t/point-file: url('symbols/crossing-tactile-paving.svg');
-		t/point-transform: 'rotate([angle]) scale(0.25)';
-	  }
-	  [wheelchair='no'] {
-		w/point-ignore-placement: true;
-		w/point-file: url('symbols/crossing-wheelchair-no.svg');
-		w/point-transform: 'rotate([angle]) scale(0.25)';
-	  }
-	  [crossing_bollard!=''] {
-		b/point-ignore-placement: true;
-		b/point-transform: 'rotate([angle]) scale(0.25)';
-		b/point-file: url('symbols/crossing-bollard.svg');
-		[crossing_bollard='half'] {	b/point-file: url('symbols/crossing-bollard-half.svg'); }
-		[crossing_bollard='contrasted'] {	b/point-file: url('symbols/crossing-bollard-contrasted.svg'); }
-		[crossing_bollard='no'] {	b/point-opacity: 0; }
-	  }
-	}
-  }
-
-  [zoom>=19][angle_diff>=40] {
-	point-file: url('symbols/zebra_crossing.svg');
-  }
-}
 
 
